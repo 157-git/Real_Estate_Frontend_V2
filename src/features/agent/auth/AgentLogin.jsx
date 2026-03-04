@@ -45,7 +45,7 @@ export default function AgentLoginPage() {
 
           <div className={styles.leftMotto}>
             <OmSymbol size={28} color="#E8900A" />
-            <h2>Welcome Back,<br/>Agent</h2>
+            <h2>Welcome Back,<br/>NR Employee</h2>
             <p>Manage your listings, leads & deals — all from one place.</p>
           </div>
 
@@ -83,7 +83,7 @@ export default function AgentLoginPage() {
             <div className={styles.reraBadge}>
               <BadgeCheck size={14} /> RERA Verified Platform
             </div>
-            <h2>Agent Login</h2>
+            <h2>NR Employee Login</h2>
             <p>Sign in to your Narayani Realtors dashboard</p>
           </div>
 
@@ -143,7 +143,7 @@ export default function AgentLoginPage() {
           </div>
 
           <div className={styles.formFoot}>
-            <p>New agent? <Link to="/agent/register" className={styles.link}>Register here</Link></p>
+            <p>New user? <Link to="/agent/register" className={styles.link}>Register here</Link></p>
             <p><Link to="/" className={styles.linkMuted}>← Back to Home</Link></p>
           </div>
 
