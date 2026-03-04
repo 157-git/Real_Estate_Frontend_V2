@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import {
-  LayoutDashboard, Building2, PlusSquare, Users,
+  LayoutDashboard, Building2, PlusSquare, Users, Gift,
   Calendar, MessageSquare, Calculator,
   ChevronLeft, ChevronRight, Bell, Search,
   LogOut, Settings, BadgeCheck, Star, Menu, X
@@ -18,6 +18,7 @@ const NAV = [
   { to: '/agent/dashboard/leads',        icon: Users,           label: 'Leads & Inquiries', badge: 3 },
   { to: '/agent/dashboard/visits',       icon: Calendar,        label: 'Site Visits' },
   { to: '/agent/dashboard/messages',     icon: MessageSquare,   label: 'Messages',           badge: 2 },
+  { to: '/agent/dashboard/festive-offers', icon: Gift,          label: 'Festive Offers' },
   { to: '/agent/dashboard/calculator',   icon: Calculator,      label: 'Stamp Duty / RR' },
 ]
 

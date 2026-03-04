@@ -14,6 +14,7 @@ import LeadsPage         from './features/agent/dashboard/LeadsPage.jsx'
 import VisitsPage        from './features/agent/dashboard/VisitsPage.jsx'
 import MessagesPage      from './features/agent/dashboard/MessagesPage.jsx'
 import CalculatorPage    from './features/agent/dashboard/CalculatorPage.jsx'
+import FestiveOffers from './features/agent/dashboard/FestiveOffers.jsx'
 
 // ── Buyer (placeholder) ───────────────────────────────────────
 // import BuyerDashboard from './features/buyer/BuyerDashboard.jsx'
@@ -39,6 +40,7 @@ export default function App() {
         <Route path="leads"           element={<LeadsPage />} />
         <Route path="visits"          element={<VisitsPage />} />
         <Route path="messages"        element={<MessagesPage />} />
+        <Route path="festive-offers"        element={<FestiveOffers />} />
         <Route path="calculator"      element={<CalculatorPage />} />
       </Route>
 
