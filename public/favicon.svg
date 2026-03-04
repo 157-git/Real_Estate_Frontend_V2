@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="8" fill="#FEF3DC"/>
+  <!-- lotus petals -->
+  <path d="M16 26 Q10 18 10 12 Q16 8 22 12 Q22 18 16 26Z" fill="#E8900A" opacity="0.9"/>
+  <path d="M16 26 Q6 19 7 12 Q10 9 14 11 Q10 15 16 26Z" fill="#E8900A" opacity="0.6"/>
+  <path d="M16 26 Q26 19 25 12 Q22 9 18 11 Q22 15 16 26Z" fill="#E8900A" opacity="0.6"/>
+  <ellipse cx="16" cy="27" rx="5" ry="1.5" fill="#2E6B3E" opacity="0.4"/>
+</svg>

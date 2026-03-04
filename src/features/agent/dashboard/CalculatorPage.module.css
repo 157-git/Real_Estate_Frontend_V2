@@ -1,0 +1,162 @@
+.page { display: flex; flex-direction: column; gap: 20px; }
+.pageHeader { display: flex; justify-content: space-between; align-items: flex-start; flex-wrap: wrap; gap: 12px; }
+.title { font-family: var(--font-body); font-size: 1.375rem; color: var(--ink); margin-bottom: 2px; }
+.pageHeader p { font-size: 0.875rem; color: var(--ink-muted); }
+
+.tabSwitch {
+  display: flex;
+  gap: 8px;
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 5px;
+  width: fit-content;
+}
+.tabBtn {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--ink-mid);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+.tabBtn:hover { background: var(--ivory); }
+.tabBtnActive { background: var(--ink) !important; color: #fff !important; }
+
+.calcLayout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  align-items: start;
+}
+@media (max-width: 860px) { .calcLayout { grid-template-columns: 1fr; } }
+
+.calcForm, .resultPanel {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 24px;
+}
+
+.calcTitle {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  color: var(--ink);
+  margin-bottom: 12px;
+}
+
+.calcNote {
+  display: flex;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 0.8125rem;
+  color: var(--ink-muted) !important;
+  background: var(--marigold-faint);
+  border-radius: 8px;
+  padding: 10px 12px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.fields { display: flex; flex-direction: column; gap: 16px; }
+
+.genderBtns { display: flex; gap: 6px; }
+.genderBtn {
+  flex: 1;
+  padding: 9px 12px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border: 1.5px solid var(--border);
+  background: #fff;
+  color: var(--ink-mid);
+  cursor: pointer;
+  transition: all 0.15s;
+  font-family: var(--font-body);
+}
+.genderBtn:hover { border-color: var(--ink); color: var(--ink); }
+.genderBtnActive { background: var(--marigold-faint); border-color: var(--ink); color: var(--ink); font-weight: 700; }
+
+.calcActions { display: flex; gap: 10px; margin-top: 8px; }
+
+/* Result */
+.resultState {
+  font-size: 0.8125rem;
+  color: var(--ink-muted);
+  margin-bottom: 16px;
+  padding: 8px 12px;
+  background: var(--ivory);
+  border-radius: 8px;
+}
+
+.resultCards { display: flex; flex-direction: column; gap: 0; }
+
+.resultRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
+}
+.resultRow:last-child { border-bottom: none; }
+.resultRow span { color: var(--ink-mid); }
+.resultRow strong { color: var(--ink); font-weight: 700; }
+
+.stamp { color: var(--marigold-deep) !important; }
+
+.resultTotal {
+  background: var(--ivory);
+  margin: 8px -24px 0;
+  padding: 12px 24px !important;
+  border-radius: 0;
+  font-size: 1rem !important;
+}
+.resultTotal span { font-weight: 600; color: var(--ink) !important; }
+.resultTotal strong { font-size: 1.125rem; color: var(--ink) !important; }
+
+.resultGrand {
+  background: var(--ink);
+  margin: 0 -24px;
+  padding: 14px 24px !important;
+  border-radius: 0 0 12px 12px;
+}
+.resultGrand span { color: rgba(255,255,255,0.7) !important; font-weight: 500; }
+.resultGrand strong { color: #fff !important; font-size: 1.25rem; }
+
+.disclaimer {
+  font-size: 0.75rem;
+  color: var(--ink-muted) !important;
+  margin-top: 16px;
+  font-style: italic;
+}
+
+.emptyResult {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 240px;
+  color: var(--ink-muted);
+  text-align: center;
+}
+.emptyResult p { font-size: 0.9rem; }
+
+.rrNote {
+  margin-top: 16px;
+  padding: 14px;
+  background: var(--marigold-pale);
+  border-radius: 10px;
+  font-size: 0.8125rem;
+  color: var(--marigold-deep);
+  line-height: 1.6;
+  border-left: 3px solid var(--marigold);
+}

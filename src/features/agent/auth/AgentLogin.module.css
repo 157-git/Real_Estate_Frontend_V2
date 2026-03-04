@@ -1,0 +1,101 @@
+.page {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  background: var(--ivory);
+}
+@media (max-width: 900px) { .page { grid-template-columns: 1fr; } }
+
+/* ─── Left Panel ── */
+.left {
+  position: relative;
+  background: linear-gradient(160deg, var(--marigold-faint) 0%, var(--ivory-warm) 60%, #fff7e8 100%);
+  border-right: 1.5px solid var(--border);
+  overflow: hidden;
+  display: flex; align-items: center; justify-content: center;
+  min-height: 100vh;
+}
+@media (max-width: 900px) { .left { display: none; } }
+
+.leftBg { position: absolute; inset: 0; pointer-events: none; }
+.lbF1 { position: absolute; top: -30px; right: -30px; transform: rotate(20deg); }
+.lbF2 { position: absolute; bottom: 40px; left: -20px; transform: rotate(-15deg); }
+.lbDots {
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(232,144,10,0.07) 1.5px, transparent 1.5px);
+  background-size: 24px 24px;
+}
+
+.leftContent {
+  position: relative; z-index: 2;
+  display: flex; flex-direction: column;
+  gap: 32px; padding: 48px 40px;
+  max-width: 420px; width: 100%;
+}
+
+.leftMotto {
+  display: flex; flex-direction: column; gap: 10px;
+}
+.leftMotto h2 { color: var(--ink); font-size: 2rem; line-height: 1.2; }
+.leftMotto p  { color: var(--ink-soft) !important; font-size: 1.0625rem; line-height: 1.65; }
+
+.leftPerks { display: flex; flex-direction: column; gap: 10px; }
+.perk {
+  display: flex; align-items: center; gap: 12px;
+  padding: 11px 16px;
+  background: rgba(255,255,255,0.7);
+  border-radius: var(--r-md);
+  border: 1px solid var(--border);
+  font-size: 0.9rem; font-weight: 500; color: var(--ink-mid);
+  backdrop-filter: blur(4px);
+}
+.perk span:first-child { font-size: 1.1rem; }
+
+.leftGarland { margin-top: 8px; }
+
+/* ─── Right Panel ── */
+.right {
+  display: flex; align-items: center; justify-content: center;
+  padding: 40px 24px;
+  background: #fff;
+}
+
+.formCard {
+  width: 100%; max-width: 420px;
+  display: flex; flex-direction: column; gap: 24px;
+}
+
+.formTop, .formBottom { text-align: center; }
+
+.formHeader { text-align: center; }
+.reraBadge {
+  display: inline-flex; align-items: center; gap: 6px;
+  background: var(--tulsi-light); color: var(--tulsi);
+  font-size: 0.75rem; font-weight: 700;
+  padding: 4px 12px; border-radius: var(--r-full);
+  margin-bottom: 12px; letter-spacing: 0.03em;
+}
+.formHeader h2 { color: var(--ink); margin-bottom: 6px; }
+.formHeader p  { color: var(--ink-muted) !important; font-size: 0.9375rem; }
+
+.fields { display: flex; flex-direction: column; gap: 16px; }
+
+.forgotRow { display: flex; justify-content: flex-end; margin-top: -6px; }
+.forgot {
+  font-size: 0.8125rem; color: var(--marigold-deep); font-weight: 600;
+  transition: color var(--t-fast);
+}
+.forgot:hover { color: var(--marigold); }
+
+.loginBtn { font-size: 1rem; }
+.otpBtn   { gap: 8px; }
+
+.formFoot {
+  text-align: center;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.formFoot p { font-size: 0.875rem; color: var(--ink-muted) !important; }
+.link     { color: var(--marigold-deep); font-weight: 600; }
+.link:hover { color: var(--marigold); }
+.linkMuted { color: var(--ink-muted); font-size: 0.8125rem; }
+.linkMuted:hover { color: var(--marigold); }
